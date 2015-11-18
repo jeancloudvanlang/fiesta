@@ -288,8 +288,8 @@ li{
 	h2 {
 		font-size: 0.8em;
 	}
-	p {
-		font-size: 0.8em;
+	p, li {
+		font-size: 0.6em;
 		margin-top: 0;
 	}
 
