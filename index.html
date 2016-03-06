@@ -1,103 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-    	<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    	<title>Tschaugsburg | Ausweihungsparty</title>
-		<meta name="theme-color" content="#db2525">
-		<link rel="icon" href="geile-img/duck.ico" type="image/png" />
-		<link rel="icon" sizes="192x192" href="geile-img/Duck-icon.png"/>
-		<!-- JS -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script type="text/javascript" src="js/jquery.alton.min.js"></script>
-        <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
+<html lang="de">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Einweihungsgeburtstag</title>
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="styles/styler.css">
-	</head>
+        <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script type="text/javascript" src="js/jquery.confetti.min.js"></script>
+        <script type="text/javascript">
+        $(function(){
+            $('html').confetti();
+             $('html').click(function(e){
+                $('[class*=confetti]').remove();
+                $('html').confetti({
+                    x: e.pageX,
+                    y: e.pageY,
+                    speedRange: 15,
+                    num: 30
+                });
+            });
+            $("#lang-bayerisch").click(function() {
+                $("#deutsch").hide();
+                $("#bayerisch").show();
+            });
+            $("#lang-deutsch").click(function() {
+                $("#deutsch").show();
+                $("#bayerisch").hide();
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <div id="lang">
+            <img src="geile-img/lang-bayerisch.png" id="lang-bayerisch" />
+            <img src="geile-img/lang-deutsch.png" id="lang-deutsch" />
+        </div>
+        <div id="einladung">
+            <div id="text">
+                <div id="deutsch">
+                    <p>Wir sind seit Anfang 2016 Münchner, deshalb gibt's am
+                        <b>18. März ab 20 Uhr</b> bei uns eine Einweihungsparty.</p>
 
-	 <body class="pageWrapper">
-		<section class="pane-container">
-			<div class="pane paneOne">
-				<div class="content-container">
-					<div class="wrapper lightText">
-						<div class="content left">
-							<h1>#Yeah,neue Wohnung!</h1>
-							<h2>Nachdem wir jetzt schon fast ein Jahr in unserer Wohnung wohnen, wird es Zeit für die <span class="uhhh">#Einweihungsparty</span>!</h2>
-						</div>
-						<div class="image-container right">
-							<img src="geile-img/Duck-icon.png" />
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="pane paneTwo">
-				<div class="content-container" background-size: cover;">
-					<div class="wrapper lightText">
-						<div class="content right">
-							<h1>Oh #Tschau!</h1>
-							<p>Allerdings verlassen wir <span class="uhhh">Augsburg</span> höchstwahrscheinlich Anfang 2016 schon wieder, um unser Geld sinnvoller in eine überteuerte Wohnung in <span class="uhhh">München</span> zu investieren.</p>
-							<p>Übrigens eine fantastische Gelegenheit die traumhafte 2-Zimmer-Wohnung zu besichtigen. Es könnte bald deine sein!</p>
-						</div>
-						<div class="image-container left">
-							<img src="geile-img/Bull-icon.png" />
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="pane paneThree">
-				<div class="content-container">
-					<div class="wrapper darkText">
-						<div class="content left">
-							<h1>Und Van-Lang hatte #Geburtstag!</h1>
-							<p>Deshalb feiert mit uns! Geschenke brauchen wir keine. Die müssen wir sonst nur wieder umziehen. Wer uns was Gutes tun will, kann <span class="uhhh">#Umzugskartons</span> beisteuern. Oder <span class="uhhh">#Alkohol</span> - <span class="uhhh">#classic</span>.</p>
-						</div>
-						<div class="image-container right">
-							<img src="geile-img/Elephant-icon.png" />
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="pane paneFour">
-				<div class="content-container">
-					<div class="wrapper lightText">
-						<div class="content center">
-							<h1>Hardly facts</h1>
+                    <p>Außerdem wird Regina zwei Tage vorher 27, deswegen feiern wir umso mehr!</p>
 
-                            <ul>
-                                <li>Samstag, <span class="uhhh">28. November</span>!</li>
-                                <li>ab <span class="uhhh">19:21</span> Uhr, #yeah!</li>
-                                <li><span class="uhhh">Morellstr. Twentyfour B</span></li>
-                                <li>Snacks vorhanden, #yeah!</li>
-                                <li>Bier vorhanden, #yeah!</li>
-                                <li>Softdrinks vorhanden, #yeah!</li>
-                            </ul>
+                    <p><b>Oh yeah! Wo?</b><br>
+                    Steinsdorfstr. 18 in München, 5. Stock</p>
 
-                            <h2>Kontaktmöglichkeiten für ja-Sager:</h2>
-                            <div class="linkis">
-    							<a href="https://www.facebook.com/events/892210100857491/" target="_blank">Facebook</a>
-    							<a href="mailto:vanlang@me.com?subject=[Tschaugsburg]">Van-Lango</a>
-                                <a href="mailto:odaa@odaa.de?subject=[Tschaugsburg]">Reginald</a>
-                            </div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+                    <p><b>Was hab ich davon?</b><br>
+                        Es gibt Bier, Bowle, Softdrinks und Knabbereien.<br>
+                        For free!!!</p>
+
+                    <p>Falls ihr uns was schenken wollt, dann nette Pflanzen<br>
+                        (maximale Raumhöhe 2,85m ...) oder einzigartige Kühl-<br>
+                        schrankmagnete.</p>
+                    <p>Gutaussehende Begleitungen sind okay, sagt aber bitte Bescheid. Parkplätze nicht vorhanden, dafür ganz viel kuscheliger Fußboden.</p>
+                </div>
+                <div id="bayerisch">
+                    <p>Mia san seit 2016 etz Münchna, desweng mochma am <b>18. März ab achtde</b> bei uns dahoam a gloane Pardtee.</p>
+
+                    <p>Und d'Regina werd zwoa Doog davoa simmazwanzg, oiso lass mas gscheid kracha.</p>
+
+                    <p><b>Jo mi leckst! Wo nachad?</b><br>
+                    Steinsdorfstr. 18 in Minga, 5. Stoog</p>
+
+                    <p><b>Und wos bringt ma dees?</b><br>
+                        Bier und Brezn. Ois ummasunst!</p>
+
+                    <p>Wennd's uns wos schenga woits, kennst scheene<br>
+                        Pflanzn mitbringa (oba ned heha ois wia zwoa Metta<br>
+                        fimfadachzg) oda so Magnete fian Kühlschrank.</p>
+
+                    <p>Scheene Leid kennts mitbringa (sogt's'as hoid). An Park-<br>
+                        blootz homma leida ned, aba wennst zum schmusn bleim mogst,<br>
+                        findma a no an Bloodz.</p>
+                </div>
+            </div>
+        </div>
+
     </body>
-
-	<script>
-		(function($) {
-			$(document).ready(function() {
-			    $(document).alton({
-			        fullSlideContainer: 'pane-container',
-			        singleSlideClass: 'pane',
-			        useSlideNumbers: true,
-			        slideNumbersBorderColor: '#fff',
-			        slideNumbersColor: 'transparent',
-			        bodyContainer: 'pageWrapper',
-			    });
-			});
-		})(jQuery);
-	</script>
-
-	</body>
 </html>
